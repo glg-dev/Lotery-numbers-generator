@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Générateur chiffres Loto</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <h1>Générer vos chiffres du LOTO</h1>
+
+  <main>
+    <section>
+      <div class="form">
+        <label for="number1">Combien de numéros ?</label>
+        <input type="range" name="number1" id="number1" min="0" max="10" value="0">
+      </div>
+      <div id="regularContainer" class="container"></div>
+    </section>
+
+    <section>
+      <div class="form">
+        <label for="number2">Combien de numéros chance ?</label>
+        <input type="range" name="number2" id="number2" min="0" max="10" value="0">
+      </div>
+      <div id="chanceContainer" class="container"></div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

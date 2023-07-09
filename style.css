@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@400;600&display=swap');
+
+:root {
+  --background: #03045E;
+  --border: #F18805;
+  --regular: #00A2D9;
+  --chance: #EA3946;
+  --range: #F0A202;
+}
+p {
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20vb;
+  block-size: 100vb;
+  background-color: var(--background);
+  font-family: 'Ysabeau Infant', sans-serif;
+  color: #FFF;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 1rem var(--border) inset, 0 0 1rem var(--border);
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  inline-size: 75vi;
+  max-inline-size: 600px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+input[type="range"] {
+  appearance: none;
+  inline-size: 10rem;
+  block-size: .5rem;
+  padding: 0;
+  background: var(--range);
+  border-radius: .75rem;
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  inline-size: 1rem;
+  block-size: 1rem;
+  border-radius: 1rem;
+  background-color: var(--range);
+}
+.results {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-inline-size: 100%;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: .9rem;
+  font-weight: 600;
+  inline-size: 2rem;
+  block-size: 2rem;
+}
+.regular {
+  background-color: var(--regular);
+}
+.chance {
+  background-color: var(--chance);
+}
+.index {
+  font-size: .75rem;
+  color: var(--range);
+}
