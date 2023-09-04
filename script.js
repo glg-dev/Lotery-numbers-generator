@@ -3,7 +3,7 @@ number1.addEventListener("input", (e) => {
   let regularNumbersArray = [];
   regularContainer.innerHTML = "";
   for (let i = 0; i < howManyRegularNumbers; i++) {
-    generate(50, regularNumbersArray);
+    generate(49, regularNumbersArray);
   }
   regularNumbersArray.map((number, index) => {
     regularContainer.innerHTML += `
